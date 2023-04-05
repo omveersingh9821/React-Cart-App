@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import data from "./data.json";
 import Products from "./components/Products";
 import Filter from "./components/Filter";
@@ -10,9 +10,20 @@ function App() {
   const [sort, setSort] = useState("");
   const [cartItems, setCartItems] = useState([]);
 
+
+  useEffect(() => {
+    const cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+    setCartItems(cartItems);
+  }, []);
+
+  const createOrder = (order) => {
+    alert("Need to save order for " + order.name);
+  }
+
   const removeFromCart = (product) => { 
     const updatedCartItems = cartItems.filter((item) => item.id !== product.id);
     setCartItems(updatedCartItems);
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
   }
   
   const addToCart = (product) => {
@@ -28,6 +39,7 @@ function App() {
       updatedCartItems.push({ ...product, count: 1 });
     }
     setCartItems(updatedCartItems);
+    localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
   };
 
   const filterProducts = (event) => {
@@ -84,7 +96,7 @@ function App() {
             <Products products={products} addToCart={addToCart} />
           </div>
           <div className="sidebar">
-            <Cart cartItems={cartItems} removeFromCart={removeFromCart}/>
+            <Cart cartItems={cartItems} removeFromCart={removeFromCart} createOrderMain={createOrder } />
           </div>
         </div>
       </main>

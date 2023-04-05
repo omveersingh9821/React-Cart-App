@@ -159,3 +159,28 @@ footer{
   flex: 1;
 }
 
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+.form-container li{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.form-container li label{
+  margin: 0.5rem;
+}
+.form-container input{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  max-width: 20rem;
+  width: 100%;
+}
