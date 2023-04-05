@@ -1,4 +1,5 @@
 html{
+  /* font-size: 62.5%; */
   box-sizing: border-box;
 }
 body,
@@ -38,7 +39,7 @@ footer{
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   
 
 }
@@ -114,7 +115,47 @@ footer{
   margin: 1rem;
   border-bottom: 1px solid #ccc;
 }
-.filter div {
-   
+
+.filter div{
+  flex: 1;
+}
+
+.cart{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+.cart-header{
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-items{
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+
+}
+.cart-items img{
+  max-width: 5rem;
+  height: 5rem;
+}
+.cart-items li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-items li div{
+  padding: .5rem;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.total > div{
+  flex: 1;
 }
 
