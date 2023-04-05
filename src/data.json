@@ -1,0 +1,44 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"Product 1",
+            "image":"https://assets.ajio.com/medias/sys_master/root/20220617/4ASV/62ac820eaeb26921af36258b/-473Wx593H-464497062-pink-MODEL.jpg",
+            "price":100,
+            "description":"Product 1 description",
+            "availableSizes":["X","L","XL","XXL"]
+        },
+        {
+            "id":2,
+            "title":"Product 2",
+            "image":"https://assets.ajio.com/medias/sys_master/root/20211013/DMdl/61667cc8f997ddf8f1ce86dd/-473Wx593H-463086147-blue-MODEL.jpg",
+            "price":200,
+            "description":"Product 2 description",
+            "availableSizes":["X","M","L"]
+        },
+        {
+            "id":3,
+            "title":"Product 3",
+            "image":"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71U0Wo-rizL._UL1500_.jpg",
+            "price":300,
+            "description":"Product 3 description",
+            "availableSizes":["X","M","L","XL"]
+        },
+        {
+            "id":4,
+            "title":"Product 4",
+            "image":"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/13901756/2022/5/10/016438e0-e11f-4022-928c-fd8286b0cd221652163797752-Ishin-Off-White-Self-Design-Fit-and-Flare-Dress-816521637971-1.jpg",
+            "price":400,
+            "description":"Product 4 description",
+            "availableSizes":["S","X","L","XL","XXL"]
+        },
+        {
+            "id":5,
+            "title":"Product 5",
+            "image":"https://static.zara.net/photos///2023/V/0/1/p/6895/057/500/2/w/324/6895057500_1_1_1.jpg?ts=1678443432598",
+            "price":500,
+            "description":"Product 5 description",
+            "availableSizes":["S","M","L","XL","XXL"]
+        } 
+    ]
+}
