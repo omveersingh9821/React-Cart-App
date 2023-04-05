@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from 'react-reveal/Fade';
 
 const Cart = ({ cartItems, removeFromCart, createOrderMain }) => {
   const [showCheckout, setShowCheckout] = useState(false);
@@ -28,6 +29,7 @@ const Cart = ({ cartItems, removeFromCart, createOrderMain }) => {
 
       <div>
         <div className="cart">
+          <Fade left cascade>
           <ul className="cart-items">
             {cartItems.map((item, index) => (
               <li key={index}>
@@ -51,7 +53,8 @@ const Cart = ({ cartItems, removeFromCart, createOrderMain }) => {
                 </div>
               </li>
             ))}
-          </ul>
+            </ul>
+          </Fade>
         </div>
         {cartItems.length !== 0 && (
           <div>
@@ -65,9 +68,11 @@ const Cart = ({ cartItems, removeFromCart, createOrderMain }) => {
             </div>
           </div>
           {
-          showCheckout && 
+              showCheckout && 
+              <Fade right cascade>
           <div className="cart">
                   <form onSubmit={createOrder}>
+                    
                     <ul className="form-container">
                       <li>
                         <label>Email</label>
@@ -84,9 +89,11 @@ const Cart = ({ cartItems, removeFromCart, createOrderMain }) => {
                       <li>
                         <button className="button primary" type="submit">Checkout</button>
                       </li>
-                    </ul>
+                      </ul>
+                      
             </form>
-          </div>
+                  </div>
+                  </Fade>
         }
         </div>
         )}

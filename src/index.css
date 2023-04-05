@@ -184,3 +184,15 @@ footer{
   max-width: 20rem;
   width: 100%;
 }
+
+.product-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+.product-details img{
+  max-width: 50rem;
+  margin: 0 auto;
+}
