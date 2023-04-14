@@ -196,3 +196,13 @@ footer{
   max-width: 50rem;
   margin: 0 auto;
 }
+
+.order-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+
+}
